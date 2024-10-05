@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Navigation Menu</title>
+	<style>
+
+		html,body{
+			background-color: #3f516e;#7f8ba1
+		}
+
+		.nav-bar{
+			width: fit-content;
+			margin: 100px auto;
+			padding: 0;
+			background-color: #cfd0d1;
+			border-radius: 10px;
+			
+		}
+
+		.nav-menu{
+			margin: 0;
+			padding: 0;
+			text-align: center;
+
+		}
+
+		.nav-bar .nav-menu li{
+			display: inline-block;
+			position: relative;
+			margin: 0px 30px;
+			padding: 30px;
+
+		}
+
+		.nav-bar .nav-menu li a{
+			color: black;
+			text-decoration: none;
+			font-size: 25px;
+			font-family: Arial, sans-serif;
+
+
+		}
+
+		.nav-bar .nav-menu li#special:hover{
+			color: white;
+			background-color: #363f47;
+			cursor: pointer;
+			
+		}
+
+		.dropdown li#special2:hover{
+			background-color: #2b2f38;
+			
+		}
+
+		.nav-bar .nav-menu li .dropdown{
+			display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #363f47;
+            padding: 0;
+            
+
+		}
+
+		.nav-bar .nav-menu li:hover .dropdown{
+			display: block;
+			cursor: pointer;
+
+		}
+
+		.nav-bar .nav-menu li:hover .dropdown li{
+			margin: 3px 0px;
+			padding: 20px 40px;
+
+		}
+
+		.nav-bar .nav-menu li:hover .dropdown li a{
+			color: white;
+			font-size: 20px;
+			text-wrap: nowrap;
+			text-decoration: none;
+		}
+
+		
+		.dropdown li .dropdowndrop{
+			display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color: #363f47;
+            padding: 0px 10px;
+            margin-top: 0px;
+            list-style: none;
+		}
+
+		.dropdown li:hover .dropdowndrop{
+			display: inline-block;
+		}
+
+		.dropdown li .dropdowndrop li{
+			margin: 0px 10px;
+
+		}
+
+		.dropdown li .dropdowndrop li a{
+			color: white;
+			font-size: 15px;
+		}
+		
+	</style>
+</head>
+<body>
+	<nav class="nav-bar">
+		<ul class="nav-menu">
+			<li><a href="#">Home</a></li>
+			<li id="special"><a href="#">Tutorials</a>
+				<ul class="dropdown">
+					<li><a href="#">Photoshop</a></li>
+					<li><a href="#">Illustrator</a></li>
+					<li id="special2" ><a href="#">Web Design</a>
+						<ul class="dropdowndrop">
+							<li><a href="#">HTML</a></li>
+							<li><a href="#">CSS</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">Articles</a></li>
+			<li><a href="#">Inspiration</a></li>
+		</ul>
+	</nav>
+</body>
+</html>

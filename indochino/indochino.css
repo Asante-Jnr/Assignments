@@ -1,0 +1,124 @@
+html,body{
+	font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #fff;
+
+}
+
+#nav-con{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.header-content{
+    padding: auto;
+}
+
+.menu-item{
+    list-style-type: none;
+    display: flex;
+    
+
+}
+
+.menu-item li{
+    margin: 30px;
+    padding: 15px;
+}
+
+.menu-item li a{
+    text-align: center;
+    text-decoration: none;
+    font-family: Aria, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.intro, .difference, .visit, .news{
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+}
+
+.intro {
+    background-color: #add8e6;
+    margin-top: 140px;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.step {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.gallery {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.images div {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .steps {
+        flex-direction: column;
+    }
+}

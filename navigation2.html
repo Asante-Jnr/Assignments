@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Navigation Menu</title>
+	<script src="https://kit.fontawesome.com/87d26c3a05.js" crossorigin="anonymous"></script>
+	<style>
+	html,body{
+		margin: 0;
+		padding: 0;
+		background-color: white;
+	}
+
+	.nav-bar{
+		width: fit-content;
+		background-color: #f7434c;
+		border-bottom-left-radius: 30px;
+		border-top-right-radius: 30px;
+		margin: 200px auto 0px auto;
+		padding: 0;
+		
+
+	}
+
+	.nav-bar ul{
+		
+		margin: 0px;
+		padding: 0px 10px;
+	}
+
+	.nav-bar ul li{
+		display: inline-flex;
+		margin: 0px 30px;
+		padding: 10px;
+		
+
+	}
+
+	.nav-bar ul li a{
+		color: white;
+		text-decoration: none;
+		padding: 5px;
+		font-family: Arial, sans-serif;
+	}
+
+	i .dropdown{
+		display: none;
+        position: absolute;      
+        background-color: #f72064;
+        margin-top: 0;
+        left: 65%;
+
+	}
+
+	i:hover .dropdown{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+
+	}
+
+	i:hover .dropdown li{
+		margin: 2px 5px;
+		padding: 5px;
+
+
+	}
+
+	i:hover .dropdown li a{
+		font-family: Arial, sans-serif;
+		
+	}
+
+	i{
+		margin: 15px 50px 15px 0px;
+		cursor: pointer;
+		color: #fff;
+
+	}
+
+	</style>
+</head>
+<body>
+	<nav class="nav-bar">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Support</a></li>
+			<i class="fas fa-search">
+				<ul class="dropdown">
+					<li><a href="#">HTML</a></li>
+					<li><a href="#">CSS</a></li>
+					<li><a href="#">Javascript</a></li>
+					<li><a href="#">Sass</a></li>
+				</ul>
+			</i>
+		</ul>	
+	</nav>
+</body>
+</html>
+
+
